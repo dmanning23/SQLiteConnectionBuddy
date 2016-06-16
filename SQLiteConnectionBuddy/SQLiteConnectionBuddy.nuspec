@@ -9,7 +9,7 @@
 		<projectUrl>https://github.com/dmanning23/SQLiteConnectionBuddy</projectUrl>
 		<licenseUrl>https://github.com/dmanning23/SQLiteConnectionBuddy/blob/master/LICENSE.txt</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>MonoGame library for making little flashcard games</description>
+		<description>Simplify opening SQLite databases for cross-platform .Net projects</description>
 		<releaseNotes />
 		<copyright>Copyright 2016</copyright>
 		<tags>pcl, windows phone, winphone, android, ios, windows universal, monogame</tags>
@@ -17,90 +17,25 @@
 
 			<!--Xamarin.Android-->
 			<group targetFramework="MonoAndroid10">
-				<dependency id="MonoGame.Framework.Android" version="3.5"/>
-				<dependency id="FilenameBuddy" version="1.0.1"/>
-				<dependency id="FontBuddy" version="1.0.1"/>
-				<dependency id="GameTimer" version="1.0"/>
-				<dependency id="HadoukInput" version="1.0"/>
-				<dependency id="InputHelper" version="1.0.1"/>
-				<dependency id="ListExtensions" version="1.0"/>
-				<dependency id="MatrixExtensions" version="1.0"/>
-				<dependency id="MenuBuddy" version="1.0"/>
-				<dependency id="MouseBuddy" version="1.0"/>
-				<dependency id="PrimitiveBuddy" version="1.0"/>
-				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
-				<dependency id="ResolutionBuddy" version="1.0"/>
-				<dependency id="StateMachineBuddy" version="1.0"/>
-				<dependency id="TetrisRandomizer" version="1.0"/>
-				<dependency id="TouchScreenBuddy" version="1.0"/>
-				<dependency id="Vector2Extensions" version="1.0.1"/>
-				<dependency id="XmlBuddy" version="1.0"/>
+				<dependency id="SQLite.Net-PCL" version="3.1.1"/>
+				<dependency id="SQLite.Net.Core-PCL" version="3.1.1"/>
 			</group>
 
 			<!--Xamarin.iOS Unified-->
 			<group targetFramework="Xamarin.iOS10">
-				<dependency id="MonoGame.Framework.iOS" version="3.5"/>
-				<dependency id="FilenameBuddy" version="1.0.1"/>
-				<dependency id="FontBuddy" version="1.0.1"/>
-				<dependency id="GameTimer" version="1.0"/>
-				<dependency id="HadoukInput" version="1.0"/>
-				<dependency id="InputHelper" version="1.0.1"/>
-				<dependency id="ListExtensions" version="1.0"/>
-				<dependency id="MatrixExtensions" version="1.0"/>
-				<dependency id="MenuBuddy" version="1.0"/>
-				<dependency id="MouseBuddy" version="1.0"/>
-				<dependency id="PrimitiveBuddy" version="1.0"/>
-				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
-				<dependency id="ResolutionBuddy" version="1.0"/>
-				<dependency id="StateMachineBuddy" version="1.0"/>
-				<dependency id="TetrisRandomizer" version="1.0"/>
-				<dependency id="TouchScreenBuddy" version="1.0"/>
-				<dependency id="Vector2Extensions" version="1.0.1"/>
-				<dependency id="XmlBuddy" version="1.0"/>
+				<dependency id="SQLite.Net-PCL" version="3.1.1"/>
+				<dependency id="SQLite.Net.Core-PCL" version="3.1.1"/>
 			</group>
 
 			<!--Win Universal-->
 			<group targetFramework="uap10.0">
-				<dependency id="MonoGame.Framework.WindowsUniversal" version="3.5"/>
 				<dependency id="Microsoft.NETCore.UniversalWindowsPlatform" version="5.1"/>
-				<dependency id="FilenameBuddy" version="1.0.1"/>
-				<dependency id="FontBuddy" version="1.0.1"/>
-				<dependency id="GameTimer" version="1.0"/>
-				<dependency id="HadoukInput" version="1.0"/>
-				<dependency id="InputHelper" version="1.0.1"/>
-				<dependency id="ListExtensions" version="1.0"/>
-				<dependency id="MatrixExtensions" version="1.0"/>
-				<dependency id="MenuBuddy" version="1.0"/>
-				<dependency id="MouseBuddy" version="1.0"/>
-				<dependency id="PrimitiveBuddy" version="1.0"/>
-				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
-				<dependency id="ResolutionBuddy" version="1.0"/>
-				<dependency id="StateMachineBuddy" version="1.0"/>
-				<dependency id="TetrisRandomizer" version="1.0"/>
-				<dependency id="TouchScreenBuddy" version="1.0"/>
-				<dependency id="Vector2Extensions" version="1.0.1"/>
-				<dependency id="XmlBuddy" version="1.0"/>
+				<dependency id="SQLite.Net-PCL" version="3.1.1"/>
 			</group>
 
 			<group targetFramework="net451">
-				<dependency id="MonoGame.Framework.DesktopGL" version="3.5"/>
-				<dependency id="FilenameBuddy" version="1.0.1"/>
-				<dependency id="FontBuddy" version="1.0.1"/>
-				<dependency id="GameTimer" version="1.0"/>
-				<dependency id="HadoukInput" version="1.0"/>
-				<dependency id="InputHelper" version="1.0.1"/>
-				<dependency id="ListExtensions" version="1.0"/>
-				<dependency id="MatrixExtensions" version="1.0"/>
-				<dependency id="MenuBuddy" version="1.0"/>
-				<dependency id="MouseBuddy" version="1.0"/>
-				<dependency id="PrimitiveBuddy" version="1.0"/>
-				<dependency id="RandomExtensions.dmanning23" version="1.0"/>
-				<dependency id="ResolutionBuddy" version="1.0"/>
-				<dependency id="StateMachineBuddy" version="1.0"/>
-				<dependency id="TetrisRandomizer" version="1.0"/>
-				<dependency id="TouchScreenBuddy" version="1.0"/>
-				<dependency id="Vector2Extensions" version="1.0.1"/>
-				<dependency id="XmlBuddy" version="1.0"/>
+				<dependency id="SQLite.Net-PCL" version="3.1.1"/>
+				<dependency id="SQLite.Net.Core-PCL" version="3.1.1"/>
 			</group>
 
 		</dependencies>
