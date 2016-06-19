@@ -1,32 +1,28 @@
 using SQLite.Net;
-using SQLite.Net.Platform.Generic;
+using SQLite.Net.Platform.Win32;
 using System;
 using System.IO;
+using System.Reflection;
 
-namespace SQLiteConnectionBuddy.WindowsUniversal
+namespace SQLiteConnectionBuddy
 {
-	public class SQLiteConnectionHelper : ISQLiteConnectionHelper
+	public class SQLiteConnectionHelper : SQLiteConnectionHelperBase
 	{
 		#region Methods
 
-		public SQLiteConnectionHelper()
+		static SQLiteConnectionHelper()
+		{
+			DocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+			DocumentsPath = Path.Combine(DocumentsPath, Assembly.GetEntryAssembly().GetName().Name);
+		}
+
+		private SQLiteConnectionHelper()
 		{
 		}
 
-		public SQLiteConnection GetConnection(string dbName)
+		public static SQLiteConnection GetConnection(string dbName)
 		{
-			//get the application data for the current project
-			string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-			var path = Path.Combine(documentsPath, dbName);
-
-			//This is where we copy in the prepopulated database
-			if (!File.Exists(path))
-			{
-				File.Copy(dbName, path);
-			}
-
-			// Return the database connection 
-			return new SQLiteConnection(new SQLitePlatformGeneric(), path);
+			return new SQLiteConnection(new SQLitePlatformWin32(), GetFilename(dbName));
 		}
 
 		#endregion //Methods

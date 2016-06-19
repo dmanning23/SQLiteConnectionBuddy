@@ -51,8 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Source\ISQLiteConnectionHelper.cs">
-      <Link>ISQLiteConnectionHelper.cs</Link>
+    <Compile Include="..\..\Source\SQLiteConnectionHelperBase.cs">
+      <Link>SQLiteConnectionHelperBase.cs</Link>
     </Compile>
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
