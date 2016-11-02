@@ -12,8 +12,17 @@ namespace SQLiteConnectionBuddy
 
 		static SQLiteConnectionHelper()
 		{
-			DocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-			DocumentsPath = Path.Combine(DocumentsPath, Assembly.GetEntryAssembly().GetName().Name);
+			//if this is being done from a unit test, the EntryAssemly will be null
+			var assembly = Assembly.GetEntryAssembly();
+			if (null != assembly)
+			{
+				DocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+				DocumentsPath = Path.Combine(DocumentsPath, assembly.GetName().Name);
+			}
+			else
+			{
+				DocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+			}
 		}
 
 		private SQLiteConnectionHelper()
