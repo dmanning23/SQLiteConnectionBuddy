@@ -22,6 +22,7 @@ namespace SQLiteConnectionBuddy
 			else
 			{
 				DocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+				DocumentsPath = Path.Combine(DocumentsPath, "db");
 			}
 		}
 

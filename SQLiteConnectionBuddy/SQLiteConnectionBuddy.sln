@@ -17,7 +17,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		SQLiteConnectionBuddy.nuspec = SQLiteConnectionBuddy.nuspec
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SQLiteConnectionBuddy.SharedProject", "SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.shproj", "{04E51096-942B-44D1-9A64-B2C6F4F08E8D}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{f543cd72-8aba-4729-949c-cdf8b981487a}*SharedItemsImports = 4
+		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{220ae1eb-7f4f-4b19-aa3f-8e424b23bd9e}*SharedItemsImports = 4
+		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{5347405a-ebf2-44c8-840a-ad08ab3456ed}*SharedItemsImports = 4
+		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{d1f26071-3b9d-452d-9965-cb509b432c63}*SharedItemsImports = 4
+		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{04e51096-942b-44d1-9a64-b2c6f4f08e8d}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AppStore|Any CPU = AppStore|Any CPU
 		AppStore|ARM = AppStore|ARM

@@ -28,10 +28,15 @@ namespace SQLiteConnectionBuddy
 
 			if (!Initialized)
 			{
-				//This is where we copy in the prepopulated database
-				if (!File.Exists(path) && File.Exists(dbName))
+				//If the requested folder doesnt exist, create it
+				if (!Directory.Exists(DocumentsPath))
 				{
 					Directory.CreateDirectory(DocumentsPath);
+				}
+
+				//If there is a prepopulated database, copy it over and use that one
+				if (!File.Exists(path) && File.Exists(dbName))
+				{
 					File.Copy(dbName, path);
 				}
 
