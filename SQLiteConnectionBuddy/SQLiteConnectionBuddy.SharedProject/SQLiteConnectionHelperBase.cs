@@ -1,3 +1,4 @@
+using SQLite.Net;
 using System.IO;
 
 namespace SQLiteConnectionBuddy

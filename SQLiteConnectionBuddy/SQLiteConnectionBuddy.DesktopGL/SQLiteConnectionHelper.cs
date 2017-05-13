@@ -30,9 +30,14 @@ namespace SQLiteConnectionBuddy
 		{
 		}
 
-		public static SQLiteConnection GetConnection(string dbName)
+		private static SQLiteConnection GetSqlConnection(string dbName)
 		{
-			return new SQLiteConnection(new SQLitePlatformWin32(), GetFilename(dbName));
+			return new SQLiteConnection(new SQLitePlatformWin32(), dbName);
+		}
+
+		public static SQLiteConnection GetConnection(string dbName, bool local = false)
+		{
+			return local ? GetSqlConnection(dbName) : GetSqlConnection(GetFilename(dbName));
 		}
 
 		#endregion //Methods
