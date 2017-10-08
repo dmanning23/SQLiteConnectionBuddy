@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>SQLiteConnectionBuddy</id>
-		<version>1.0.6</version>
+		<version>1.0.10</version>
 		<title>SQLiteConnectionBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -19,7 +19,9 @@
 			<group targetFramework="MonoAndroid10">
 				<dependency id="SQLite.Net-PCL" version="3.1.1"/>
 				<dependency id="SQLite.Net.Core-PCL" version="3.1.1"/>
-			</group>
+        <dependency id="SQLite.Net.Platform.XamarinAndroidN" version="3.1.1"/>
+        <dependency id="Mono.Data.Sqlite.Portable" version="1.0.3.5"/>
+      </group>
 
 			<!--Xamarin.iOS Unified-->
 			<group targetFramework="Xamarin.iOS10">

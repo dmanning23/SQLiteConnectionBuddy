@@ -3,14 +3,13 @@ using SQLite.Net.Platform.WinRT;
 
 namespace SQLiteConnectionBuddy
 {
-	public class SQLiteConnectionHelper:SQLiteConnectionHelperBase
+	public class SQLiteConnectionHelper : SQLiteConnectionHelperBase
 	{
 		#region Methods
 
 		static SQLiteConnectionHelper()
 		{
 			DocumentsPath = Windows.Storage.ApplicationData.Current.LocalFolder.Path;
-			//DocumentsPath = Path.Combine(DocumentsPath, Assembly.GetEntryAssembly().GetName().Name);
 		}
 
 		private SQLiteConnectionHelper()

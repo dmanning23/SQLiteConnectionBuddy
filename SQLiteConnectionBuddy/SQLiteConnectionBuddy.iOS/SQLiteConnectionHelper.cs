@@ -13,7 +13,6 @@ namespace SQLiteConnectionBuddy
 		static SQLiteConnectionHelper()
 		{
 			DocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-			//string libraryPath = Path.Combine(documentsPath, "..", "Library"); // Library folder
 			DocumentsPath = Path.Combine(DocumentsPath, Assembly.GetEntryAssembly().GetName().Name);
 		}
 
