@@ -40,6 +40,23 @@ namespace SQLiteConnectionBuddy
 			return local ? GetSqlConnection(dbName) : GetSqlConnection(GetFilename(dbName));
 		}
 
+		public static void CopyEmbeddedDatabase(string dbName, bool force = false)
+		{
+			var path = Path.Combine(DocumentsPath, dbName);
+
+			//If the requested folder doesnt exist, create it
+			if (!Directory.Exists(DocumentsPath))
+			{
+				Directory.CreateDirectory(DocumentsPath);
+			}
+
+			//If there is a prepopulated database, copy it over and use that one
+			if (force || (!File.Exists(path) && File.Exists(dbName)))
+			{
+				File.Copy(dbName, path, true);
+			}
+		}
+
 		#endregion //Methods
 	}
 }
