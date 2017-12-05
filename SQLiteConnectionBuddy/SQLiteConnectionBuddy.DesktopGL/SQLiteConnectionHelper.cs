@@ -1,5 +1,4 @@
-using SQLite.Net;
-using SQLite.Net.Platform.Win32;
+using SQLite;
 using System;
 using System.IO;
 using System.Reflection;
@@ -32,7 +31,7 @@ namespace SQLiteConnectionBuddy
 
 		private static SQLiteConnection GetSqlConnection(string dbName)
 		{
-			return new SQLiteConnection(new SQLitePlatformWin32(), dbName);
+			return new SQLiteConnection(dbName);
 		}
 
 		public static SQLiteConnection GetConnection(string dbName, bool local = false)

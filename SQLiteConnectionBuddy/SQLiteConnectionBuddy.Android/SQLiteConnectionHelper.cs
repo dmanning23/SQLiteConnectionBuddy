@@ -1,6 +1,5 @@
 ﻿using Android.App;
-using SQLite.Net;
-using SQLite.Net.Platform.XamarinAndroid;
+using SQLite;
 using System.IO;
 
 namespace SQLiteConnectionBuddy
@@ -20,7 +19,7 @@ namespace SQLiteConnectionBuddy
 
 		private static SQLiteConnection GetSqlConnection(string dbName)
 		{
-			return new SQLiteConnection(new SQLitePlatformAndroidN(), dbName);
+			return new SQLiteConnection(dbName);
 		}
 
 		public static SQLiteConnection GetConnection(string dbName, bool local = false)
