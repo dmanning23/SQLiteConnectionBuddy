@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteConnectionBuddy.Android", "SQLiteConnectionBuddy.Android\SQLiteConnectionBuddy.Android.csproj", "{5347405A-EBF2-44C8-840A-AD08AB3456ED}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteConnectionBuddy.DesktopGL", "SQLiteConnectionBuddy.DesktopGL\SQLiteConnectionBuddy.DesktopGL.csproj", "{D1F26071-3B9D-452D-9965-CB509B432C63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteConnectionBuddy.iOS", "SQLiteConnectionBuddy.iOS\SQLiteConnectionBuddy.iOS.csproj", "{F543CD72-8ABA-4729-949C-CDF8B981487A}"
 EndProject
@@ -19,13 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SQLiteConnectionBuddy.SharedProject", "SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.shproj", "{04E51096-942B-44D1-9A64-B2C6F4F08E8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteConnectionBuddy.WindowsDX", "SQLiteConnectionBuddy.WindowsDX\SQLiteConnectionBuddy.WindowsDX.csproj", "{D1F26071-3B9D-452D-9965-CB509B432C63}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{f543cd72-8aba-4729-949c-cdf8b981487a}*SharedItemsImports = 4
+		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{04e51096-942b-44d1-9a64-b2c6f4f08e8d}*SharedItemsImports = 13
 		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{220ae1eb-7f4f-4b19-aa3f-8e424b23bd9e}*SharedItemsImports = 4
 		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{5347405a-ebf2-44c8-840a-ad08ab3456ed}*SharedItemsImports = 4
 		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{d1f26071-3b9d-452d-9965-cb509b432c63}*SharedItemsImports = 4
-		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{04e51096-942b-44d1-9a64-b2c6f4f08e8d}*SharedItemsImports = 13
+		SQLiteConnectionBuddy.SharedProject\SQLiteConnectionBuddy.SharedProject.projitems*{f543cd72-8aba-4729-949c-cdf8b981487a}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AppStore|Any CPU = AppStore|Any CPU
@@ -66,30 +66,6 @@ Global
 		{5347405A-EBF2-44C8-840A-AD08AB3456ED}.Release|x64.Build.0 = Release|Any CPU
 		{5347405A-EBF2-44C8-840A-AD08AB3456ED}.Release|x86.ActiveCfg = Release|Any CPU
 		{5347405A-EBF2-44C8-840A-AD08AB3456ED}.Release|x86.Build.0 = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|Any CPU.Build.0 = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|ARM.ActiveCfg = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|ARM.Build.0 = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|x64.ActiveCfg = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|x64.Build.0 = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|x86.ActiveCfg = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|x86.Build.0 = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|ARM.Build.0 = Debug|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|x64.Build.0 = Debug|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|x86.Build.0 = Debug|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|ARM.ActiveCfg = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|ARM.Build.0 = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|x64.ActiveCfg = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|x64.Build.0 = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|x86.ActiveCfg = Release|Any CPU
-		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|x86.Build.0 = Release|Any CPU
 		{F543CD72-8ABA-4729-949C-CDF8B981487A}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
 		{F543CD72-8ABA-4729-949C-CDF8B981487A}.AppStore|Any CPU.Build.0 = Release|Any CPU
 		{F543CD72-8ABA-4729-949C-CDF8B981487A}.AppStore|ARM.ActiveCfg = Release|Any CPU
@@ -138,8 +114,35 @@ Global
 		{220AE1EB-7F4F-4B19-AA3F-8E424B23BD9E}.Release|x64.Build.0 = Release|x64
 		{220AE1EB-7F4F-4B19-AA3F-8E424B23BD9E}.Release|x86.ActiveCfg = Release|x86
 		{220AE1EB-7F4F-4B19-AA3F-8E424B23BD9E}.Release|x86.Build.0 = Release|x86
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|ARM.ActiveCfg = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|ARM.Build.0 = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|x64.ActiveCfg = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|x64.Build.0 = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|x86.ActiveCfg = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.AppStore|x86.Build.0 = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|ARM.Build.0 = Debug|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|x64.Build.0 = Debug|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Debug|x86.Build.0 = Debug|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|ARM.Build.0 = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|x64.ActiveCfg = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|x64.Build.0 = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|x86.ActiveCfg = Release|Any CPU
+		{D1F26071-3B9D-452D-9965-CB509B432C63}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F01F62D1-1832-41DB-B469-506502BFA01B}
 	EndGlobalSection
 EndGlobal

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>SQLiteConnectionBuddy</id>
-		<version>1.0.14</version>
+		<version>1.0.15</version>
 		<title>SQLiteConnectionBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -51,9 +51,9 @@
 		<file src="SQLiteConnectionBuddy.WindowsUniversal\bin\Release\SQLiteConnectionBuddy.WindowsUniversal.pdb" target="lib\uap10.0\SQLiteConnectionBuddy.WindowsUniversal.pdb" />
 		<file src="SQLiteConnectionBuddy.WindowsUniversal\bin\Release\SQLiteConnectionBuddy.WindowsUniversal.dll" target="lib\uap10.0\SQLiteConnectionBuddy.WindowsUniversal.dll" />
 
-		<!--DesktopGL-->
-		<file src="SQLiteConnectionBuddy.DesktopGL\bin\Release\SQLiteConnectionBuddy.DesktopGL.pdb" target="lib\net451\SQLiteConnectionBuddy.DesktopGL.pdb" />
-		<file src="SQLiteConnectionBuddy.DesktopGL\bin\Release\SQLiteConnectionBuddy.DesktopGL.dll" target="lib\net451\SQLiteConnectionBuddy.DesktopGL.dll" />
+		<!--WindowsDX-->
+		<file src="SQLiteConnectionBuddy.WindowsDX\bin\Release\SQLiteConnectionBuddy.WindowsDX.pdb" target="lib\net451\SQLiteConnectionBuddy.WindowsDX.pdb" />
+		<file src="SQLiteConnectionBuddy.WindowsDX\bin\Release\SQLiteConnectionBuddy.WindowsDX.dll" target="lib\net451\SQLiteConnectionBuddy.WindowsDX.dll" />
 
 	</files>
 </package>
