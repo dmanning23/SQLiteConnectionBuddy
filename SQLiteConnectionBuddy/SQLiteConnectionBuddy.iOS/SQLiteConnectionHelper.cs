@@ -29,6 +29,26 @@ namespace SQLiteConnectionBuddy
 			return local ? GetSqlConnection(dbName) : GetSqlConnection(GetFilename(dbName));
 		}
 
+		/// <summary>
+		/// This method copies a pre-seeded database from the Assets folder to the local filesystem
+		/// </summary>
+		/// <param name="dbName"></param>
+		public static void CopyEmbeddedDatabase(string dbName, bool force = false)
+		{
+			//check if the db exists on the local filesystem
+			var path = Path.Combine(DocumentsPath, dbName);
+			if (!Directory.Exists(DocumentsPath))
+			{
+				Directory.CreateDirectory(DocumentsPath);
+			}
+
+			//If there is a prepopulated database, copy it over and use that one
+			if (force || (!File.Exists(path) && File.Exists(dbName)))
+			{
+				File.Copy(dbName, path, true);
+			}
+		}
+
 		#endregion //Methods
 	}
 }
